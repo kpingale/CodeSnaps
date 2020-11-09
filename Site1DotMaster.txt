@@ -1,0 +1,61 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Assignment.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            height: 499px;
+        }
+        .auto-style2 {
+            margin-left: 186px;
+        }
+        .auto-style3 {
+            margin-left: 149px;
+        }
+        .auto-style4 {
+            margin-left: 120px;
+        }
+        .auto-style5 {
+            margin-left: 175px;
+        }
+        .auto-style6 {
+            margin-left: 142px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="auto-style1">
+            <asp:Label ID="Date" runat="server" Text="Date"></asp:Label>
+            <asp:TextBox ID="Date1" runat="server" CssClass="auto-style2" OnTextChanged="TextBox1_TextChanged" Width="539px"></asp:TextBox>
+            <br><br>
+            <asp:Label ID="Account" runat="server" Text="Account"></asp:Label>
+            <asp:TextBox ID="Account1" runat="server" CssClass="auto-style3" OnTextChanged="TextBox1_TextChanged" Width="546px"></asp:TextBox>
+            <br><br>
+            <asp:Label ID="Description" runat="server" Text="Description"></asp:Label>
+            <asp:TextBox ID="Description1" runat="server" CssClass="auto-style4" OnTextChanged="TextBox1_TextChanged" Width="547px"></asp:TextBox>
+            <br><br>
+            <asp:Label ID="Hotel" runat="server" Text="Hotel"></asp:Label>
+            <asp:TextBox ID="Hotel1" runat="server" CssClass="auto-style5" OnTextChanged="TextBox1_TextChanged" Width="543px"></asp:TextBox>
+            <br><br>
+            <asp:Label ID="Meals" runat="server" Text="Meals"></asp:Label>
+            <asp:TextBox ID="Meals1" runat="server" CssClass="auto-style5" OnTextChanged="TextBox1_TextChanged" Width="536px"></asp:TextBox>
+            <br><br>
+            <asp:Label ID="Transport" runat="server" Text="Transport"></asp:Label>
+            <asp:TextBox ID="Transport1" runat="server" CssClass="auto-style6" OnTextChanged="TextBox1_TextChanged" Width="541px"></asp:TextBox>
+            <br><br>
+            <asp:Label ID="Label7" runat="server" Text="Label"></asp:Label><br><br>
+            <input id="Add" type="button" value="Add" /><input id="Delete" type="button" value="Delete" /><input id="Update" type="button" value="Update" /><br>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <p>
+        &nbsp;</p>
+</body>
+</html>
